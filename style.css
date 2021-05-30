@@ -1,0 +1,58 @@
+body {
+  background: rgb(13, 139, 205);
+  background: linear-gradient(
+    90deg,
+    rgba(13, 139, 205, 1) 0%,
+    rgba(12, 69, 221, 1) 91%
+  );
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  text-align: center;
+  color: white;
+}
+h1 {
+  letter-spacing: 0.1em;
+  font-size: 2.5em;
+  padding: 1em 1em 1em 1em;
+}
+form input,
+form button {
+  margin-bottom: 2em;
+  color: rgba(13, 139, 205, 1);
+
+  padding: 0.5em;
+  font-size: 1.3em;
+  border: 1px solid gray;
+  margin-left: 0.5em;
+}
+hr {
+  width: 50%;
+}
+input {
+  border-radius: 5em;
+}
+input:focus {
+  outline: none;
+}
+button {
+  width: 7%;
+  border-radius: 5em;
+}
+button:hover {
+  background: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid black;
+  transition: all 0.2s ease-in;
+}
+ol,
+li {
+  font-size: 1.3em;
+  /* display:block; */
+  text-align: left;
+}
+.list {
+  display: flex;
+  justify-content: center;
+}
