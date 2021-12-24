@@ -11,16 +11,21 @@
     <div class="container">
         <h1>Todo List</h1>
         <form>
-            <input type="text" name="list" placeholder="Type here">
-            <button>+</button>
+            <input class="todo-input" type="text" placeholder="Type here">
+            <button class="todo-button"><span class="plus">+</span></button>
         </form>
     </div>
     
     <hr>
     <div class="container">
+        <select>
+            <option value="All">All</option>
+            <option value="Checked">Checked</option>
+            <option value="Unchecked">Unchecked</option>
+        </select>
         <h1>My List</h1>
-        <div class="list">
-            <ol>
+        <div class="todo-container">
+            <ol class="todo-list">
             <li>hello</li>
             <li>there</li>
             <li></li>

@@ -9,16 +9,22 @@ body {
   box-sizing: border-box;
 }
 .container {
+  padding-top: 42px;
   text-align: center;
   color: white;
 }
 h1 {
+  /* margin-top:-84px; */
   letter-spacing: 0.1em;
   font-size: 2.5em;
   padding: 1em 1em 1em 1em;
 }
+.container h1{
+  display: none;
+}
 form input,
-form button {
+form button,select {
+  min-width: 60px;
   margin-bottom: 2em;
   color: rgba(13, 139, 205, 1);
 
@@ -27,13 +33,18 @@ form button {
   border: 1px solid gray;
   margin-left: 0.5em;
 }
+select{
+  text-align: center;
+}
+
 hr {
   width: 50%;
+  margin-bottom: 55px;
 }
-input {
+input , select{
   border-radius: 5em;
 }
-input:focus {
+input,select:focus {
   outline: none;
 }
 button {
@@ -52,9 +63,11 @@ li {
   /* display:block; */
   text-align: left;
 }
-.list {
+.todo-container {
   display: flex;
   justify-content: center;
+  letter-spacing: 2px;
+  font-size: 19px;
 }
 *{
   user-select: none;
