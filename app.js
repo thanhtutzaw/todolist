@@ -2,10 +2,13 @@
 const todoInput = document.querySelector('.todo-input');
 const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
+const classbtn = document.getElementsByClassName('todo-button::after');
+// const button = document.querySelector('.todo-button::after');
 
 //event listeners
 todoButton.addEventListener('click',addTodo);
 
+// todoButton.addEventListener('click',btn);
 //functions
 function addTodo(event) {
     
@@ -37,3 +40,8 @@ function addTodo(event) {
 
     todoInput.value = "";
 }
+
+// function btn(){
+//     classbtn.stye.setProperty("opacity","0");
+    
+// }
