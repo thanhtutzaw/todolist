@@ -1,4 +1,5 @@
 body {
+
   background: rgb(13, 139, 205);
   background: linear-gradient(
     90deg,
@@ -30,7 +31,7 @@ form button,select {
 
   padding: 0.5em;
   font-size: 1.3em;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   margin-left: 0.5em;
 }
 select{
@@ -54,22 +55,68 @@ button {
 button:hover {
   background: rgb(0, 0, 0);
   color: white;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   transition: all 0.2s ease-in;
 }
-ol,
+ul,
 li {
   font-size: 1.3em;
   /* display:block; */
   text-align: left;
 }
-.todo-container {
+/* .todo-container {
   display: flex;
   justify-content: center;
   letter-spacing: 2px;
   font-size: 19px;
-}
+} */
 *{
+  border:none;
   user-select: none;
+}
+.todo-container{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.todo-list{
+      width: clamp(534px, 60vw, 441px);
+  min-width: 30%;
+  list-style: none;
+}
+.todo{
+  margin:0.5rem;
+  background: white;
+  color:black;
+  font-size:1.5rem;
+  display:flex ;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li{
+  flex:1;
+}
+.trash-btn,
+.complete-btn{
+  width:auto;
+color:white;
+background: red;
+border:none;
+border-radius: 0px;
+padding: 1rem;
+display: flex;
+justify-content: center;
+}
+.complete-btn{
+  background: green;
+
+}
+.trash-btn:hover{
+  background: rgb(82, 1, 1);
+}
+.complete-btn:hover{
+  background: rgb(1, 53, 1);
 }
 
