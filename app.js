@@ -60,7 +60,7 @@ function deleteCheck(e){
     }
     if (item.classList[0] === 'complete-btn'){
         const todo = item.parentElement;
-        todo.firstChild.classList.toggle('completed');
+        todo.firstChild.classList.toggle('completed'); //fast child is important and idk why
         // todoList.classList.toggle('completed');
 
 
