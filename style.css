@@ -69,18 +69,17 @@ input,button,select:focus {
   width: 7%;
   border-radius: 5em;
 } */
-.todo-button::after{
+/* .todo-button::after{
   content: '';
   position: absolute;
   background: grey;
   width:30px;
   height:30px;
   margin-left:-23px;
-  /* opacity:0.2; */
   border-radius: 50%;
-  /* animation:animate 1s cubic-bezier(0, 0, 0.2, 1) infinite; */
+  animation:animate 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 
-}
+} */
 
 
 button:hover {
