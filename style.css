@@ -112,18 +112,24 @@ li {
   
 }
 .todo-list{
+    /* padding:0 0.5em; */
       width: clamp(534px, 60vw, 441px);
   min-width: 30%;
   list-style: none;
 }
+.todo-item{
+  padding:0 0.5em;
+  font-size:1.5rem;
+}
 .todo{
+
   margin:0.5rem;
   background: white;
   color:black;
-  font-size:1.5rem;
   display:flex ;
   justify-content: space-between;
   align-items: center;
+  transition: all .3s ease-in-out;
 }
 ul li{
   flex:1;
@@ -149,4 +155,14 @@ justify-content: center;
 .complete-btn:hover{
   background: rgb(1, 53, 1);
 }
-
+.fa-trash , .fa-check {
+  pointer-events: none;
+}
+.completed{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.fall{
+  transform: translateX(5rem);
+  opacity: 0;
+}

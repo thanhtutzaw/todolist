@@ -7,6 +7,8 @@ const classbtn = document.getElementsByClassName('todo-button::after');
 
 //event listeners
 todoButton.addEventListener('click',addTodo);
+todoList.addEventListener('click',deleteCheck);
+
 
 // todoButton.addEventListener('click',btn);
 //functions
@@ -45,3 +47,22 @@ function addTodo(event) {
 //     classbtn.stye.setProperty("opacity","0");
     
 // }
+
+function deleteCheck(e){
+    const item = e.target;
+    if (item.classList[0] === 'trash-btn'){
+        const todo = item.parentElement;
+        todo.classList.add('fall');
+        todo.addEventListener('transitionend',function(){
+            todo.remove(); 
+        })
+        // todo.remove();
+    }
+    if (item.classList[0] === 'complete-btn'){
+        const todo = item.parentElement;
+        todo.firstChild.classList.toggle('completed');
+        // todoList.classList.toggle('completed');
+
+
+    }
+}
