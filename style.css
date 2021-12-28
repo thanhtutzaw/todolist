@@ -34,6 +34,10 @@ select {
   /* border: 1px solid gray; */
   /* margin-left: 0.5em; */
 }
+select{
+  /* background: red; */
+  cursor: pointer;
+}
 form input{
   
   border-radius:5em 0 0 5em;
@@ -53,7 +57,12 @@ form button{
 }
 select{
   text-align: center;
+
 }
+
+/* .select::after{
+  color:red;
+} */
 
 hr {
   width: 50%;

@@ -24,15 +24,16 @@
 
     <hr>
     <div class="container">
-        <select>
-            <option value="All">All</option>
-            <option value="Checked">Checked</option>
-            <option value="Unchecked">Unchecked</option>
-        </select>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Checked</option>
+                <option value="uncompleted">Unchecked</option>
+            </select>
+        </div>
         <h1>My List</h1>
         <div class="todo-container">
-            <ul class="todo-list">
-            </ul>
+            <ul class="todo-list"></ul>
         </div>
     </div>
     <script src="app.js"></script>
